@@ -3,7 +3,7 @@ $chkdskTitle    = 'Temporarily disable disk with chkdsk?'
 $choices  = '&Yes', '&No'
 
 $chkdiskDecision = $Host.UI.PromptForChoice($chkdskTitle, $chkdskPrompt, $choices, 1)
-if ($decision -ne 0) {
+if ($chkdiskDecision -ne 0) {
 	Write-Host "👌🏽"
     exit
 } 
